@@ -72,7 +72,7 @@ EOF
 
   # Rezip target files
   cd ${BUILD_DIR}/out/target/product/${DEVICE}/obj/PACKAGING/target_files_intermediates/aosp_${DEVICE}-target_files-${BUILD_NUMBER}
-  zip --symlinks -r ../aosp_blueline-target_files-${BUILD_NUMBER}.zip *
+  zip --symlinks -r ../aosp_${DEVICE}-target_files-${BUILD_NUMBER}.zip *
   cd "${pwd_restore}"
 
 }
